@@ -10,7 +10,7 @@ html {
 }
 
 .page-wrapper {
-    background-image: url('Images/bg-intro-desktop.png');
+    background-image: url('images/bg-intro-desktop.png');
     background-color: hsl(0, 100%, 74%);
     background-blend-mode: normal;
     background-size: cover;
