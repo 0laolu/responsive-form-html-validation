@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Intro component with sign up form</title>
+
+  </head>
+  <body>
+    <main class="page-wrapper"> 
+      <section class="content-wrapper">
+        <!-- CONTENT SECTION -->
+        <div class="about-content">
+          <div class="text-container">
+            <h3 class="about-content__header">Learn to code by watching others</h3>
+            <p>
+              See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+              but understanding how developers think is invaluable.
+            </p>
+          </div>
+        </div>
+
+        <!-- SIGN UP FORM SECTION -->
+        <form action="/" method="GET" class="form-section">
+          <div class="form__announcement">
+            <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+          </div>
+          <section class="form__input-section">
+            <div class="form__field-wrapper">
+              <div class="firstname input-container">
+                <input type="text" name="first-name" placeholder="First Name" id="first-name" class="input-field"> 
+                <div class="error"></div>
+              </div>
+              <div class="lastname input-container">
+                <input type="text" name="last-name" placeholder="Last Name" id="last-name" class="input-field">
+                <div class="error"></div>
+              </div>
+              <div class="email input-container">
+                <input type="email" name="email" placeholder="Email Address" id="email" class="input-field">
+                <div class="error"></div>
+              </div>
+              <div class="password input-container">
+                <input type="password" name="password" placeholder="Password" id="password" class="input-field">
+                <div class="error"></div>
+              </div>
+
+              <div class="cta-button">
+                <button type="submit" class="trial-btn">CLAIM YOUR FREE TRIAL</button>
+              </div>
+              <div class="confirmation-text">
+                <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+              </div>
+
+            </div>
+          </section>
+        </form>
+
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

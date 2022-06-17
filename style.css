@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+.page-wrapper {
+    background-image: url('Images/bg-intro-desktop.png');
+    background-color: hsl(0, 100%, 74%);
+    background-blend-mode: normal;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    width: 78%;
+    margin-inline: auto;
+}
+
+.text-container {
+    width: 80%;
+    margin-inline: auto;
+}
+
+.about-content__header {
+    color: white;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.1;
+    padding-bottom: 2.3rem;
+}
+
+.about-content__header + p {
+    color: rgb(226, 226, 226);
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.form-section {
+    /* border: 1px solid red; */
+    width: 78%;
+}
+
+div.form__announcement {
+    background-color: hsl(248, 32%, 49%);
+    width: 100%;
+    padding: 1.3rem 0;
+    margin-bottom: 2rem;
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+div.form__announcement p {
+    color: hsl(246, 25%, 77%);
+    font-size: 1.2rem;
+    letter-spacing: 0.01rem;
+}
+
+div.form__announcement span {
+    color: white;
+    font-weight: 600;
+}
+
+.form__input-section {
+    background-color: white;
+    padding: 3.5rem 0 2.5rem 0;
+    border: 1px solid white;
+    border-radius: 12px;
+}
+
+.form__field-wrapper {
+    width: 85%;
+    margin-inline: auto;
+}
+
+.input-container input {
+    color: black;
+    display: block;
+    font-weight: 500;
+    width: 100%;
+    padding: 1.4rem 2rem;
+    border: 1px solid lightgrey;
+    border-radius: 7px;
+    outline: none;
+}
+
+input#email.error-active::-webkit-input-placeholder {
+    color: red;
+    font-size: 1.15rem;
+    font-weight: 500;
+ }
+
+::placeholder {
+    color: grey;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.error {
+    text-align: end;
+    color: red;
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-style: oblique;
+    padding: 0.4rem 0;
+    margin-bottom: 0.7rem;
+}
+
+.cta-button {
+    width: 100%;
+}
+
+.trial-btn {
+    background-color: hsl(154, 59%, 51%);
+    color: rgb(244, 244, 244);
+    text-align: center;
+    font-weight: 600;
+    width: 100%;
+    padding: 1rem 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 0.03rem;
+    box-shadow: 0 4px hsl(154, 59%, 41%);
+}
+
+.trial-btn:hover {
+    background-color: hsl(154, 55%, 60%);
+    box-shadow: 0 4px hsl(154, 35%, 50%);
+}
+
+.confirmation-text {
+    text-align: center;
+    width: 100%;
+    padding-top: 1.5rem; 
+}
+
+.confirmation-text p {
+    color: grey;
+    font-size: 0.8rem;
+}
+
+.confirmation-text span {
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+}
+
