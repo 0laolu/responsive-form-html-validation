@@ -182,7 +182,7 @@ input#email.error-active::-webkit-input-placeholder {
         box-sizing: border-box;
     }
     .page-wrapper {
-        background-image: url('Images/bg-intro-mobile.png');
+        background-image: url('images/bg-intro-mobile.png');
         background-size: contain;
     }
 
