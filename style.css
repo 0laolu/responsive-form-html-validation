@@ -47,8 +47,7 @@ html {
 }
 
 .form-section {
-    /* border: 1px solid red; */
-    width: 78%;
+    width: 84%;
 }
 
 div.form__announcement {
@@ -59,6 +58,7 @@ div.form__announcement {
     text-align: center;
     border: 1px solid grey;
     border-radius: 5px;
+    box-shadow: 0 6px rgba(0, 0, 0, 0.2);
 }
 
 div.form__announcement p {
@@ -77,11 +77,17 @@ div.form__announcement span {
     padding: 3.5rem 0 2.5rem 0;
     border: 1px solid white;
     border-radius: 12px;
+    box-shadow: 0 8px rgba(0, 0, 0, 0.15);
 }
 
 .form__field-wrapper {
     width: 85%;
     margin-inline: auto;
+}
+
+.input-container__entry-field {
+    display: flex;
+    position: relative;
 }
 
 .input-container input {
@@ -93,6 +99,19 @@ div.form__announcement span {
     border: 1px solid lightgrey;
     border-radius: 7px;
     outline: none;
+}
+
+.input-container img {
+    display: none;
+}
+
+.input-container img.active {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    right: 7%;
+    top: 30%;
 }
 
 input#email.error-active::-webkit-input-placeholder {
@@ -154,5 +173,152 @@ input#email.error-active::-webkit-input-placeholder {
 .confirmation-text span {
     color: hsl(0, 100%, 74%);
     font-weight: 700;
+}
+
+@media screen and (max-width: 850px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .page-wrapper {
+        background-image: url('Images/bg-intro-mobile.png');
+        background-size: contain;
+    }
+
+    .content-wrapper {
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 6rem;
+    }
+
+    .text-container {
+        text-align: center;
+        width: 85%;
+    }
+
+    .about-content { 
+        width: 90%;
+        max-width: 540px;
+        margin-inline: auto;
+        margin-bottom: 3.7rem;
+    }
+
+    .about-content__header {
+        font-size: 1.7rem;
+        padding-bottom: 1rem;
+        line-height: 1.5;
+    }
+
+    .about-content__header + p {
+        font-size: 0.9rem;
+        line-height: 1.8;
+    }
+
+    .form-section {
+        width: 100%;
+    }
+
+    div.form__announcement {  
+        text-align: center;
+        width: 90%;
+        max-width: 540px;
+        padding: 0.7rem 20%;
+        margin-inline: auto;
+        box-shadow: 0 6px rgba(0, 0, 0, 0.2);
+    }
+
+    div.form__announcement p {
+        font-size: 0.9rem;
+        line-height: 1.8;
+    }
+
+    .form__input-section {  
+        width: 90%;
+        max-width: 540px;
+        padding: 2rem 0 1.5rem 0;
+        margin-inline: auto;
+        border-radius: 8px;
+        margin-bottom: 5rem;
+        box-shadow: 0 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .input-container input {
+        padding: 1rem;
+    }
+
+    input#email.error-active::-webkit-input-placeholder {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .error {
+        font-size: 0.85rem;
+    }
+
+    ::placeholder {
+        color: grey;
+        font-size: 0.85rem;
+        font-weight: 600;
+    }
+
+    .cta-button {
+        width: 100%;
+        padding: 1rem 0; 
+    }
+}
+
+@media screen and (min-width: 851px) and (max-width: 1470px) {
+    .content-wrapper {
+        width: 100%;
+        padding-inline: 3%;
+    }
+
+    .about-content {
+        /* border: 1px solid blue; */
+        width: 100%;
+    }
+
+    .text-container {
+        width: 90%;
+        margin-inline: 0;
+        /* border: 1px solid red; */
+    }
+
+    .about-content__header {
+        font-size: 3rem;
+        padding-bottom: 1.2rem;
+    }
+
+    .about-content__header + p {
+        font-size: 1.1rem;
+    }
+
+    .form-section {
+        margin: 5rem 0;
+    }
+}
+
+@media screen and (min-width: 1240px) and (max-width: 1470px) {
+    .content-wrapper {
+        padding-right: 10%;
+    }
+
+    .about-content {
+        /* border: 1px solid yellow; */
+        width: 100%;
+    }
+
+    .text-container {
+        width: 80%;
+        max-width: 550px;
+        margin-inline: auto;
+        /* border: 1px solid red; */
+    }
+
+    .form-section {
+        max-width: 500px;
+        margin: 5rem 0;
+    }
 }
 
