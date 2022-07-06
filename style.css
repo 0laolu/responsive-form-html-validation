@@ -85,10 +85,6 @@ div.form__announcement span {
     margin-inline: auto;
 }
 
-.input-container__entry-field {
-    display: flex;
-    position: relative;
-}
 
 .input-container input {
     color: black;
@@ -115,7 +111,7 @@ div.form__announcement span {
 }
 
 input#email.error-active::-webkit-input-placeholder {
-    color: red;
+    color: hsl(0, 90%, 60%);
     font-size: 1.15rem;
     font-weight: 500;
  }
@@ -128,7 +124,7 @@ input#email.error-active::-webkit-input-placeholder {
 
 .error {
     text-align: end;
-    color: red;
+    color: hsl(0, 90%, 60%);
     font-size: 0.9rem;
     font-weight: 500;
     font-style: oblique;
@@ -175,7 +171,7 @@ input#email.error-active::-webkit-input-placeholder {
     font-weight: 700;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1100px) {
     * {
         padding: 0;
         margin: 0;
@@ -243,6 +239,10 @@ input#email.error-active::-webkit-input-placeholder {
         box-shadow: 0 8px rgba(0, 0, 0, 0.15);
     }
 
+    .form__field-wrapper {
+        width: 90%;
+    }
+
     .input-container input {
         padding: 1rem;
     }
@@ -268,21 +268,61 @@ input#email.error-active::-webkit-input-placeholder {
     }
 }
 
-@media screen and (min-width: 851px) and (max-width: 1470px) {
+@media screen and (min-width: 850px) and (max-width: 1100px) {
+
+    .text-container {
+        width: 95%;
+    }
+
+    .about-content__header {
+        font-size: 2.5rem;
+        padding-bottom: 1.5rem;
+        line-height: 1.4;
+    }
+
+    .about-content__header + p {
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
+    div.form__announcement {
+        padding: 0.9rem 0;
+        max-width: 600px;
+    }
+
+    div.form__announcement p {
+        font-size: 1rem;
+        width: 80%;
+        margin-inline: auto;
+    }
+
+    .form__input-section {
+        max-width: 600px;
+        padding: 3rem 0 2.5rem 0;
+    }
+
+    .input-container input {
+        padding: 1.15rem;
+    }
+
+    ::placeholder {
+        font-size: 0.95rem;
+    }
+}
+
+@media screen and (min-width: 1101px) and (max-width: 1470px) {
     .content-wrapper {
         width: 100%;
         padding-inline: 3%;
     }
 
     .about-content {
-        /* border: 1px solid blue; */
         width: 100%;
     }
 
     .text-container {
         width: 90%;
         margin-inline: 0;
-        /* border: 1px solid red; */
     }
 
     .about-content__header {
