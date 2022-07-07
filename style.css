@@ -401,6 +401,9 @@ input#email.error-active::-webkit-input-placeholder {
         top: 26%;
         right: 5%;
         opacity: 0;
+    }
+
+    .error-image.active {
         opacity: 1;
     }
 }
