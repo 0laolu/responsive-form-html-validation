@@ -4,7 +4,8 @@ const firstNameEl = document.getElementById('first-name');
 const lastNameEl = document.getElementById('last-name');
 const emailEl = document.getElementById('email');
 const passwordEl = document.getElementById('password');
-const inputFields = document.querySelectorAll('.input-field')
+const errorIcon = document.querySelectorAll('.error-image');
+
 
 // ADDDING THE SUBMIT LISTENER TO THE FORM ELEMENT
 formElement.addEventListener('submit', function(event) {
@@ -47,26 +48,38 @@ const validEmail = isValidEmail();
 let validateInputs = () => {
     if(firstNameEl.value === '') {
         firstNameEl.placeholder = '';
-        firstNameEl.style.border = '2px solid hsl(0, 90%, 60%)'
+        firstNameEl.style.border = '2px solid hsl(0, 90%, 60%)';
         showError(firstNameEl, 'First name cannot be empty')
+        errorIcon.forEach(errorImg => {
+            errorImg.classList.add('active')
+        });
     };
 
     if(lastNameEl.value === '') {
         lastNameEl.placeholder = '';
-        lastNameEl.style.border = '2px solid hsl(0, 90%, 60%)'
+        lastNameEl.style.border = '2px solid hsl(0, 90%, 60%)';
         showError(lastNameEl, 'Last name cannot be empty')
+        errorIcon.forEach(errorImg => {
+            errorImg.classList.add('active')
+        });
     };
 
     if(emailEl.value === '') {
         emailEl.style.border = '2px solid hsl(0, 90%, 60%)';
         email.placeholder = ''
         showError(emailEl, 'Looks like this is not an email');
+        errorIcon.forEach(errorImg => {
+            errorImg.classList.add('active')
+        });
     } 
 
     if(passwordEl.value === '') {
         passwordEl.placeholder = '';
-        passwordEl.style.border = '2px solid hsl(0, 90%, 60%)'
+        passwordEl.style.border = '2px solid hsl(0, 90%, 60%)';
         showError(passwordEl, 'Password cannot be empty');
+        errorIcon.forEach(errorImg => {
+            errorImg.classList.add('active')
+        });
     };
 }
 
